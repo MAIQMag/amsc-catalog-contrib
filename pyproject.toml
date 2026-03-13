@@ -1,0 +1,17 @@
+[project]
+name = "catalog-ingest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "data-catalog-ingest>=0.3.0",
+    "pydantic-settings>=2.10.1",
+]
+
+[tool.uv.sources]
+data-catalog-ingest = { index = "amsc-data-catalog-ingest-index" }
+
+[[tool.uv.index]]
+name = "amsc-data-catalog-ingest-index"
+url = "https://gitlab.com/api/v4/projects/77154677/packages/pypi/simple"
